@@ -6,13 +6,14 @@ html, body {
 
 body {
   font-family: Roboto, sans-serif;
-  margin: 0;
+  margin: 10;
   background: #aaa;
   color: #333;
   /* I'll give you this one for free lol */
   display: flex;
   align-items: center;
   justify-content: center;
+  gap:50px;
 }
 
 .modal {
@@ -20,6 +21,9 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  gap: 20px;
+  padding: 20px;
 }
 
 .icon {
@@ -27,7 +31,7 @@ body {
   font-size: 26px;
   font-weight: 700;
   background: lavender;
-  width: 42px;
+  width: 200px;
   height: 42px;
   border-radius: 50%;
   display: flex;
@@ -48,6 +52,24 @@ body {
   justify-content: center;
 }
 
+.header_body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header_ex {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap:8px;
+}
+
 button {
   padding: 8px 16px;
   border-radius: 8px;
@@ -63,4 +85,8 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.columns {
+  display:flex;
 }
